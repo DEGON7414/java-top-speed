@@ -6,7 +6,7 @@ public class Java03_FlowControl_3 {
         //特殊分支結構
         //switch (資料){}
         //
-        int i = 10;
+        int i = 40;
         switch ( i ){
             case 10:
                 System.out.println("分支一");
