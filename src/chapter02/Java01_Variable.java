@@ -22,9 +22,10 @@ public class Java01_Variable {
         String name = "WW";
         System.out.println(name);
         //使用變數前 先給他賦值稱為初始化。
-        String mail;
+
         //沒初始化所以底下會報錯
-        //System.out.println(mail);
+//        String mail;
+//        System.out.println(mail);
     }
 
 }

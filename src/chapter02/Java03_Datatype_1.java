@@ -14,7 +14,7 @@ public class Java03_Datatype_1 {
         long l = 1;
         // todo 浮點類型(有小數點的)
         //float 單精度 數據要用F(f)結尾
-        float f = 1.0F;
+        float f = 1.0f;
         //double 雙精度
         double d = 2.0;
         //todo 字符類型
