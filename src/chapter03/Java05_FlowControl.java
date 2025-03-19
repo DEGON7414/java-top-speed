@@ -20,7 +20,7 @@ public class Java05_FlowControl {
     	//一定至少會執行一次
     	do {
 			System.out.println("dowhile循環");
-		} while (age < 40);
+		} while (age < 20);
     	//3.for
     	//true 執行 false跳出
     	//初始化表達式用於對條件表達式使用到的變數進行初始化(賦值)

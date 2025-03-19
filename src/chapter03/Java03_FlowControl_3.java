@@ -10,7 +10,7 @@ public class Java03_FlowControl_3 {
         switch ( i ){
             case 10:
                 System.out.println("分支一");
-                break;
+//               break;
                 case 20:
                     System.out.println("分支二");
                     case 30:
