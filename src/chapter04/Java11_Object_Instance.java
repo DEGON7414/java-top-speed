@@ -31,6 +31,7 @@ class  User11{
 
 	User11(String name) {
 		System.out.println(name);
+		this.name = name;//要有賦值
 
 	}
 	void test (){

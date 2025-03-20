@@ -9,11 +9,13 @@ public class Java02_Object_2 {
 		teacher.teach();
 		
 		Student student = new Student();
-		student.name= "Lavine";
+		student.name= "LaVine";
 		student.study();
 
 }
 }
+
+
 class Teacher{
 	String name;
 	void teach() {
