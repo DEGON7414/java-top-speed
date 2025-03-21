@@ -30,7 +30,7 @@ class User08 {
 		System.out.println("靜態代碼執行3");
 	}
 	{
-		System.out.println("代碼執行1");
+		System.out.println("代碼執行2");
 
 	}
 }
