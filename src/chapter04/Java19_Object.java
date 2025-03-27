@@ -13,7 +13,11 @@ public class Java19_Object {
 		User19 instance7 = User19.getInstance();
 		System.out.println(instance1 == instance2);//比較地址
 		System.out.println(instance1.equals(instance2) );
-
+		//TODO 單例模式 步驟
+		//1.私有化建構子
+		//2.建立靜態變數 user19 = null
+		//3.建立靜態方法 沒物件時要建立一個
+		//4.所有變數都指向同一個物件
 
 	}
 }
