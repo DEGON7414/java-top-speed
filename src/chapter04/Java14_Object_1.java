@@ -2,9 +2,11 @@ package chapter04;
 
 public class Java14_Object_1{
 	public static void main(String[] args) {
-		//TODO 在一個建構子中想要調用其他建構子 要用到this
+		//TODO 在一個建構子中想要調用其他建構子 要用到this() 注意有()
 		User141 user1 = new User141();
-
+		//測試 1
+		//無參數調用 name參數建構子 後者再調用 name sex建構子
+		//運作上 和方法類似 後入 先出 因此結果是最後的建構子優先出來
 	}
 }
 class User141{

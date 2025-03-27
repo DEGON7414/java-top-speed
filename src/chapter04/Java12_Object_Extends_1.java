@@ -6,23 +6,23 @@ public class Java12_Object_Extends_1 {
 		//子類可以繼承父類的成員屬性和方法
 		//可以多子但不能多父
 		Child1 child1 = new Child1();
-		child1.name = "ZOZO"; //如果這樣 super 也是輸出ZOZO 因為子類別沒有設定 name 屬性
-		//這裡會修改繼承的父類屬性
+		child1.name = "ZOZO";
 		child1.test();
-//		child1.test(super.name); super this 都代表是物件用的 在靜態方法、代碼塊中無法用
+		//1.測試 子類別test 方法
+		// 子類別中有特別重新寫屬性name 輸出為JOJO、ZOZO、ZOZO
 
-
-
+		//2.測試 子類別test 方法
+		// 把子類屬性name 註解
+		// 此時賦值會給到 父類別 name因此 輸出三個都是ZOZO
 	}
 }
 class Parent1{
 	String name = "JOJO";
 
-//	void test(){
-//		System.out.println(name);
-//	}
 }
 class Child1 extends Parent1{
+	//如果子類別沒有設定 name 屬性
+	//這裡會修改繼承的父類屬性
 //	String name = "ZOZO";
 	void test(){
 		System.out.println(super.name);
