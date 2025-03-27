@@ -2,7 +2,7 @@ package chapter07;
 
 import java.util.ArrayList;
 
-public class Java06_Collection_ {
+public class Java06_Collection_Generic {
     public static void main(String[] args) throws Exception {
         //TODO 泛型
         ArrayList<Object> objects = new ArrayList<>();
