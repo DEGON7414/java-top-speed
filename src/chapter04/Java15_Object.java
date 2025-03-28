@@ -23,7 +23,7 @@ class Child15 extends Parent15{
 	String name = "JQUERY";
 	@Override
 	void test(){
-//		super.test();
+		super.test();
 		System.out.println(name +" " +"child test");
 	}
 }
