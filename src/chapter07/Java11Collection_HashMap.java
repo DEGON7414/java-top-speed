@@ -1,6 +1,8 @@
 package chapter07;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class Java11Collection_HashMap {
     public static void main(String[] args) throws InterruptedException {
@@ -17,7 +19,29 @@ public class Java11Collection_HashMap {
         System.out.println(hashMap);
         //刪除
         hashMap.remove("B");
+        //這個需要KV都一樣才會刪除
+        hashMap.remove("B", 1111);
         System.out.println(hashMap);
+        //替換 replace 純替換 如果沒有key 就不會操作
+        hashMap.replace("A", 5);
+        System.out.println(hashMap);
+        System.out.println("**********");
+
+        //keyset獲取map 中所有的key
+        Set keySet = hashMap.keySet();
+        for (Object object : keySet) {
+			System.out.println(hashMap.get(object));
+		}
+      //獲取鍵值對
+        Set<Map.Entry<String, Integer>> entrySet = hashMap.entrySet();
+        for (Map.Entry<String, Integer> entry : entrySet) {
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+        }
+
+		}
+        
+        
 
     }
-}
+    
+    	
