@@ -12,13 +12,18 @@ public class Java01_Object {
     public static void main(String[] args) {
         //TODO 常見類和物件
         //java.lang.Object:物件
+        //物件轉成字符
+        //Object 的toString 預設傳的是 記憶體地址
+        //除非有override
+
+        //測試 1
+        //取得記憶體地址
+        //hashcode
         Object objperson = new Person();
         String s = objperson.toString();
-        //物件轉成字符
-        //toString 預設船的是 記憶體地址
-        //除非有override
         System.out.println(s);
-        //TODO 獲取 物件的記憶體地址
+
+        //TODO 獲取 物件的hashcode
         int i = objperson.hashCode();
         System.out.println(i);
 
