@@ -28,7 +28,7 @@ class User26 extends Person26 {
         String name = "羂索";
         System.out.println(name); //這裡指的是參數 就近原則
         System.out.println(super.name);
-        System.out.println("****** 子類test ******");
+        System.out.println("****** 底下是靜態子類方法 ******");
 
     }
 

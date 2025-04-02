@@ -10,6 +10,7 @@ public class Java23_Object_Enum {
         // = static final
         System.out.println(City.TOKYO.name);
         System.out.println(City.TAIPEI.name);
+
         System.out.println(MyCity.TAI.name);
         System.out.println(MyCity.TOKYO.name);
         //測試 1 直接測試

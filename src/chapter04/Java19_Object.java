@@ -6,11 +6,7 @@ public class Java19_Object {
 		//使用場景: 1.類的構造複雜2.類的物件消耗資源
 		User19 instance1 = User19.getInstance();
 		User19 instance2 = User19.getInstance();
-		User19 instance3 = User19.getInstance();
-		User19 instance4 = User19.getInstance();
-		User19 instance5 = User19.getInstance();
-		User19 instance6 = User19.getInstance();
-		User19 instance7 = User19.getInstance();
+
 		System.out.println(instance1 == instance2);//比較地址
 		System.out.println(instance1.equals(instance2) );
 		//TODO 單例模式 步驟

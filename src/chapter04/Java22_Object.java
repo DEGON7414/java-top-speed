@@ -21,12 +21,12 @@ public class Java22_Object {
         Computer computer = new Computer();
         Light light = new Light();
         Light light1 = new Light();
-       // Light light2 = new Light();
+//        Light light2 = new Light();
         //屬性指向light 物件 可以使用 light的方法。
         //相當於 UsbReceive usb1 = new Light();
         computer.usb1 = light;
         computer.usb2 = light1;
-        //computer.usb3 = light2;
+//        computer.usb3 = light2;
         computer.powerSupply();
 
     }
