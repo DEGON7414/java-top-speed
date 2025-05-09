@@ -25,17 +25,17 @@ public class Java03_Collection_List {
         arrayList.add("c");
         arrayList.add("d");
         //TODO 訪問集合中的資料
-        //獲取集合中的資料的條數 .size()
+        //1.獲取集合中的資料的條數 .size()
         System.out.println(arrayList.size());
-        //打印集合對象
+        //2.打印集合對象
         System.out.println(arrayList);
-        //獲取指定位置的資料
+        //3.獲取指定位置的資料
         System.out.println(arrayList.get(0));
-        //遍歷
+        //4.遍歷
         for (int i = 0; i < arrayList.size(); i++) {
             System.out.println(arrayList.get(i));
         }
-        //如果遍歷不在乎資料位置可以使用特殊for
+        //4.如果遍歷不在乎資料位置可以使用特殊for
         //for (循環物件:集合)
         for(Object o : arrayList) {
             System.out.println("特殊for: "+o);

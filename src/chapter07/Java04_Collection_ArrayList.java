@@ -14,6 +14,7 @@ public class Java04_Collection_ArrayList {
         otherList1.add("a");
         otherList1.add("b");
         otherList1.add("c");
+        //1.可以在ArrayList中增加ArrayList
         arrayList.addAll(otherList1);
         System.out.println(arrayList);
 

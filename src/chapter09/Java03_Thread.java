@@ -18,7 +18,6 @@ public class Java03_Thread {
         thread.start();
         thread.sleep(1000);
         }
-
     }
 }
 //TODO 第一個線程

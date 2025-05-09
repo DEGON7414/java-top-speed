@@ -1,9 +1,11 @@
 package chapter07;
 
 import java.util.HashSet;
+import java.util.Objects;
 
 public class Java09_Collection_Hashset_2 {
     public static void main(String[] args) throws Exception {
+
         HashSet hashSet = new HashSet();
         User09 user1 = new User09();
         user1.id = 1;
@@ -30,26 +32,26 @@ class User09{
     public int id;
     public String name;
 
-//    @Override //比較兩個物件是否相等
-//    public boolean equals(Object o) {
-//        //檢查物件是否為 null 或 類型是否不同
-//        if (o == null || getClass() != o.getClass()) return false;
-//        //強轉成 User09
-//        User09 user09 = (User09) o;
-//        //比較 id name
-//        return id == user09.id && Objects.equals(name, user09.name);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(id);
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "User09{" +
-//                "id=" + id +
-//                ", name='" + name + '\'' +
-//                '}';
-//    }
+    @Override //比較兩個物件是否相等
+    public boolean equals(Object o) {
+        //檢查物件是否為 null 或 類型是否不同
+        if (o == null || getClass() != o.getClass()) return false;
+        //強轉成 User09
+        User09 user09 = (User09) o;
+        //比較 id name
+        return id == user09.id && Objects.equals(name, user09.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "User09{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

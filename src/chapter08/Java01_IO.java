@@ -29,16 +29,22 @@ public class Java01_IO {
 			   System.out.println("這個文件物件存在");
 			   if (file.isFile()) {
 			       System.out.println("file關聯的是一個檔案");
+				   //1.取得name
 			       System.out.println(file.getName());
+				   //2.取得長度
 			       System.out.println(file.length());
-			       //最後修改時間
+			       //3.最後修改時間
 			       System.out.println(file.lastModified());
-			       //路徑
+			       //4.路徑
 			       System.out.println(file.getAbsolutePath());
+				   //如果file關聯的是一個資料夾
 			   } else if ( file.isDirectory() ) {
 			       System.out.println("file關聯的是一個資料夾");
+				   //1.取得name
 			       System.out.println(file.getName());
+				   //2.最後修改時間
 			       System.out.println(file.lastModified());
+				   //3.路徑
 			       System.out.println(file.getAbsolutePath());
 			       String[] list = file.list();
 			       System.out.println("資料夾中的檔案");
@@ -46,6 +52,7 @@ public class Java01_IO {
 					System.out.println(string);
 				}
 			       System.out.println("資料夾中的文件物件");
+				   //列出某個資料夾底下的所有檔案或子資料夾
 			       File[] listFiles = file.listFiles();
 			       for (File file2 : listFiles) {
 					System.out.println(file2);

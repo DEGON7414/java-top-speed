@@ -1,12 +1,7 @@
 package chapter07;
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 public class Java12Collection_Util {
     public static void main(String[] args) throws InterruptedException {
@@ -25,7 +20,7 @@ public class Java12Collection_Util {
     	Arrays.sort(is); // 1,2,3,4,5
     	System.out.println(Arrays.toString(is));
 
-    	// 二分查找法: 排序後的陣列
+    	// 二分查找法: 排序後的陣列 binarySearch
     	//傳回該值的索引 沒找到會回傳false
     	//索引 從0開始算
     	System.out.println(Arrays.binarySearch(is, 5));

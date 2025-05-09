@@ -7,7 +7,7 @@ import java.util.Set;
 public class Java11Collection_HashMap_1 {
     public static void main(String[] args) throws InterruptedException {
         //TODO 集合 Hashmap
-        //存儲是無序的
+        // 書接上回 介紹常用方法  putIfAbsent replace keySet clear containsKey
         HashMap hashMap = new HashMap();
         //put 可以新增 也可以修改
         hashMap.put("A", 1); //第一個是 key 第二個是 value
@@ -33,6 +33,7 @@ public class Java11Collection_HashMap_1 {
 
         Collection values = hashMap.values();
         for (Object o : values) {
+            System.out.println(o );
 
         }
     }

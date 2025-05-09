@@ -5,13 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Java06_Object_Date {
-    public static void main(String[] args) throws ParseException {
-     //TODO 日期類
-        //Date 時間戳 毫秒
+    public static void main(String[] args) {
+        //TODO 日期類
+        //1.Date 時間戳 獲取當前毫秒
         System.out.println(System.currentTimeMillis());
-
-
         //TODO Calender 日曆類
+        //2.獲取當前日期
         Date date = new Date();
         System.out.println(date);
 
@@ -21,20 +20,26 @@ public class Java06_Object_Date {
         //d(D)-> dd 一個月中的日子 D 一年的日期
         //h(H)->h 12進制 H 24進制
         //s(S)-> s:秒 S毫秒
-
+        //TODO simpleDateFormat 日期格式化
         //Date ->  String
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String format = simpleDateFormat.format(date);
         System.out.println(format);
         //String -> Date
-        String dateString = "2025-03-21";
-        Date parse = simpleDateFormat.parse(dateString);
+        String dateString = "2025-03-";
+        try {
+            Date parse = simpleDateFormat.parse(dateString);
+            System.out.println(parse);
 
-        //根據時間戳建構指定日期對象
-        date.setTime(System.currentTimeMillis());
+        } catch (ParseException e) {
+            System.out.println("日期格式有錯");
+            e.printStackTrace();
+
+        }
         //獲得時間戳
         long time = date.getTime();
         System.out.println(time);
+
 
     }
 

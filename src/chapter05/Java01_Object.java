@@ -1,13 +1,5 @@
 package chapter05;
 
-/**
- * ClassName: Java01_Object
- * Description:
- *
- * @Author 許記源
- * @Create 2025/3/19 下午 03:02
- * @Version 1.0
- */
 public class Java01_Object {
     public static void main(String[] args) {
         //TODO 常見類和物件

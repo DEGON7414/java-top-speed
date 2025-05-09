@@ -1,8 +1,6 @@
 package chapter07;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -20,6 +18,7 @@ public class Java11Collection_HashMap_3 {
     	//如果直接遍歷會出錯ConcurrentModificationException
     	//因為修改資料了導致循環中的排序和修改後的排序不依樣
     	//iterator會記得狀態並安全刪除
+		//測驗1 直接執行
     	
     	
     	//hasNext 是否有下一條數據

@@ -14,12 +14,12 @@ public class Java05_Collection_LinkedList {
         linkedList.addFirst("b");
         linkedList.addLast("c");
         linkedList.add(1,"d");
-
+        System.out.println(linkedList);
         //獲取 getfirst getlast
         System.out.println(linkedList.getFirst());
         System.out.println(linkedList.getLast());
+        System.out.println(linkedList.get(1));//索引
         //獲取 遍歷
-        linkedList.get(1);
         for (int i = 0; i < linkedList.size(); i++) {
             System.out.println("全部"+ linkedList.get(i));
         }
